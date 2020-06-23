@@ -4,10 +4,12 @@ using UnityEngine;
 using QFramework;
 using QFramework.Example;
 using UnityEngine.UI;
+using FourSeasons;
 
 public class App : MonoBehaviour
 {
     private AppConfig mConfig;
+    private VideoCanvas mVideoCanvas;
     void Awake()
     {
         ResMgr.Init();
@@ -28,30 +30,32 @@ public class App : MonoBehaviour
             Screen.SetResolution(mConfig.ScreenWidth, mConfig.ScreenHight, mConfig.ScreenMode);
         }
         
-        UIMgr.SetResolution(mConfig.ScreenWidth, mConfig.ScreenHight,0);
+        UIMgr.SetResolution(mConfig.ScreenWidth, mConfig.ScreenHight, 0);
 
-        InitEnvironment();
+        InitVideoCanvas();
 
-        InitKinect();
+        //InitKinect();
 
         GeometricRectificationMode();
 
-        UIMgr.OpenPanel<UIHomePanel>();
+       UIMgr.OpenPanel<UIMainPanel>();
      
 #if !UNITY_EDITOR
               Cursor.visible = mConfig.IsCursorVisible;
 #endif
     }
 
-    void InitEnvironment()
+    void InitVideoCanvas()
     {
-        var go = GameObject.Find("Environment");
+        var go = GameObject.Find("VideoCanvas");
         if (go.IsNotNull())
         {
             go.DestroySelfGracefully();
         }
 
-        ResLoader.Allocate().LoadSync<GameObject>("Environment").Instantiate();
+        mVideoCanvas = ResLoader.Allocate().LoadSync<GameObject>("VideoCanvas").Instantiate()
+                                    .GetComponent<VideoCanvas>();
+
     }
 
     void InitKinect()
@@ -73,9 +77,9 @@ public class App : MonoBehaviour
 
         var canvas = canvasScaler.GetComponent<Canvas>();
 
-        Camera.main.targetTexture = new RenderTexture(mConfig.ScreenWidth, mConfig.ScreenHight, 99, RenderTextureFormat.ARGB32);
-
-        canvas.transform.Find("RawImage").GetComponent<UISkewImage>().material.mainTexture = Camera.main.targetTexture;
+        mVideoCanvas.Camera.targetTexture = new RenderTexture(6932, 800, 99, RenderTextureFormat.ARGB32);
+       
+        canvas.transform.Find("RawImage").GetComponent<UISkewImage>().material.mainTexture = mVideoCanvas.Camera.targetTexture;
 
         UIMgr.Camera.targetTexture = new RenderTexture(mConfig.ScreenWidth, mConfig.ScreenHight, 99, RenderTextureFormat.ARGB32);
 

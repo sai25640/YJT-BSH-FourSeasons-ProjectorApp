@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1622684444
+CRC: 1976635436
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 0bd0375198c594b97dea817a8621b907
+    Hash: 0568fd52806470a3f07321e72cfd5e5c
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 1faa72fd3932e76a65bfa3a145267b75
+    Hash: ec7b032b5a1ce55e6ab0f7ece5139c28
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -15,21 +15,13 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 20
   Script: {instanceID: 0}
-- Class: 21
-  Script: {instanceID: 0}
-- Class: 23
-  Script: {instanceID: 0}
-- Class: 33
-  Script: {instanceID: 0}
-- Class: 43
-  Script: {instanceID: 0}
-- Class: 48
-  Script: {instanceID: 0}
-- Class: 64
-  Script: {instanceID: 0}
 - Class: 81
   Script: {instanceID: 0}
 - Class: 108
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
   Script: {instanceID: 0}
 Assets:
 - Assets/Art/Prefab/Environment.prefab

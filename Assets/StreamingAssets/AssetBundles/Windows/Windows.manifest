@@ -1,16 +1,19 @@
 ManifestFileVersion: 0
-CRC: 3016241253
+CRC: 3779461576
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
       Name: uimainpanel_prefab
       Dependencies: {}
     Info_1:
-      Name: environment_prefab
+      Name: kinectcontroller_prefab
       Dependencies: {}
     Info_2:
-      Name: canvas_prefab
+      Name: environment_prefab
       Dependencies: {}
     Info_3:
-      Name: kinectcontroller_prefab
+      Name: canvas_prefab
+      Dependencies: {}
+    Info_4:
+      Name: videocanvas_prefab
       Dependencies: {}

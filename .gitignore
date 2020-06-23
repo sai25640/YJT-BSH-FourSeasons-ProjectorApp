@@ -6,6 +6,7 @@
 /Temp/
 /bin/
 /AssetBundles/
+/Assets/StreamingAssets/AssetBundles/
 /Assets/Art/Video/
 *.csproj #
 Assembly-CSharp-Editor.csproj
