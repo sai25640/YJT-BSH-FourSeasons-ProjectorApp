@@ -1,0 +1,26 @@
+ManifestFileVersion: 0
+CRC: 2330660055
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 6ccc37e4cb471ab0a2dedece50092b95
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: 6c7616ab5f03d6e71b17a9948b105eba
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: fbaf8a3136352ad4ab7d94c4621ec4bb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1aa42bf2332b2d94481d46683c31c7e7, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 6b531f336dfee5f438f94ed501caefc7, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/Prefab/KinectController.prefab
+Dependencies: []

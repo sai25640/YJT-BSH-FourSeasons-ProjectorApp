@@ -1,0 +1,13 @@
+/Library/
+/Logs/
+/Packages/
+/.vs/
+/obj/
+/Temp/
+/bin/
+/AssetBundles/
+*.csproj #
+Assembly-CSharp-Editor.csproj
+Assembly-CSharp.csproj
+*.csproj
+

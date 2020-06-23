@@ -1,0 +1,9 @@
+{
+  "ScreenWidth":1920,
+  "ScreenHight":1080, 
+  "ScreenMode": 1,
+  "IsCursorVisible": false,
+  "IsGeometricRectificationMode": false,
+  "IsNoBorderMode": false,
+  "IsKinectOn": false
+}

@@ -1,0 +1,50 @@
+ManifestFileVersion: 0
+CRC: 2180649171
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 7b3237c53b957fd341d2bf15cd031f55
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: ef06b176170cf629b3fe37e259be7f3c
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 20
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1e5b7a0363d0de5488cc7401ddb2bb4f, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0dd4c394fe06f4ea49e03aaa5e7a8190, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3fd90a8856e1a49eba25728d5aaac9f2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 193f5de83578d0b4f9a104e19f1a09eb, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1e07f04a99fb84441a6a1aba2f31682d, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: e276ccba4f7314d9988af19f9b3a611b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: bc7fd33c57d694994b0ab9f33fcdcbea, type: 3}
+- Class: 115
+  Script: {instanceID: 0}
+- Class: 222
+  Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
+- Class: 224
+  Script: {instanceID: 0}
+Assets:
+- Assets/Art/UIPrefab/Canvas.prefab
+Dependencies: []
