@@ -29,5 +29,10 @@ namespace FourSeasons
         {
             mVideoPlayer.Play();
         }
+
+        public void Stop()
+        {
+            mVideoPlayer.Stop();
+        }
     }
 }

@@ -5,6 +5,7 @@ namespace Common
     {
         TableVideoEnd,
         WholeVideoEnd,
+        StopPlayProjectVideo,
     }
 }
 

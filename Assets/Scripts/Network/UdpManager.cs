@@ -148,6 +148,9 @@ public class UdpManager : MonoSingleton<UdpManager>, ISocket
                 case MessageDefine.TableVideoEnd:
                     EventCenter.Broadcast(EventType.TableVideoEnd);
                     break;
+                case MessageDefine.StopPlayProjectVideo:
+                    EventCenter.Broadcast(EventType.StopPlayProjectVideo);
+                    break;
             }
         }
     }

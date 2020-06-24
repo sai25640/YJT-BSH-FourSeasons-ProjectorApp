@@ -41,6 +41,10 @@ namespace FourSeasons
             this.Delay(1f, ()=>this.Hide());
             EventCenter.Broadcast(EventType.WholeVideoEnd);
         }
-     
+
+	    public void Stop()
+	    {
+            mVideoPlayer.Stop();
+	    }
     }
 }

@@ -43,6 +43,7 @@ public static class UdpMessageExtension
 public static class MessageDefine
 {
     public const string TableVideoEnd = "TableVideoEnd";
+    public const string StopPlayProjectVideo = "StopPlayProjectVideo";
 }
 #endregion
 
