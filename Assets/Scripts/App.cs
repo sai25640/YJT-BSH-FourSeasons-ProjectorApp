@@ -98,7 +98,7 @@ public class App : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            var msg = new UdpMessage("ID1","HelloWorld");
+            var msg = new UdpMessage("ID1", "HelloWorld");
             UdpManager.Instance.SendMessage(msg.ToJson());
         }
     }

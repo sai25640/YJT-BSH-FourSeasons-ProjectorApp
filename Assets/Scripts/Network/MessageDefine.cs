@@ -44,6 +44,7 @@ public static class MessageDefine
 {
     public const string TableVideoEnd = "TableVideoEnd";
     public const string StopPlayProjectVideo = "StopPlayProjectVideo";
+    public const string WholeVideoEnd = "WholeVideoEnd";
 }
 #endregion
 

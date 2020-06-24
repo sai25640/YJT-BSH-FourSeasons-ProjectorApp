@@ -40,6 +40,9 @@ namespace FourSeasons
             Debug.Log(string.Format("Video:{0} PlayEnd", source.name));
             this.Delay(1f, ()=>this.Hide());
             EventCenter.Broadcast(EventType.WholeVideoEnd);
+            //通知交互端开始倒计时
+            var msg = new UdpMessage(MessageDefine.WholeVideoEnd);
+            UdpManager.Instance.SendMessage(msg.ToJson());
         }
 
 	    public void Stop()
