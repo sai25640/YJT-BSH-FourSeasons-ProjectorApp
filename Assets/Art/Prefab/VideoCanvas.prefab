@@ -1,5 +1,147 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3124489699352782271
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4734702845068839516}
+  - component: {fileID: 2674838932161708311}
+  - component: {fileID: 6334191752901324700}
+  - component: {fileID: 636779176976730557}
+  - component: {fileID: 5933227791467375853}
+  - component: {fileID: 1318029483061696275}
+  m_Layer: 9
+  m_Name: WholeVideo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &4734702845068839516
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3124489699352782271}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 8112974836243308745}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 6920, y: 800}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2674838932161708311
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3124489699352782271}
+  m_CullTransparentMesh: 0
+--- !u!114 &6334191752901324700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3124489699352782271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Texture: {fileID: 8400000, guid: 5775671cb909479408a90705eae2da07, type: 2}
+  m_UVRect:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 1
+    height: 1
+--- !u!328 &636779176976730557
+VideoPlayer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3124489699352782271}
+  m_Enabled: 1
+  m_VideoClip: {fileID: 32900000, guid: da2776efa350df3458697ab5c9f3d29c, type: 3}
+  m_TargetCameraAlpha: 1
+  m_TargetCamera3DLayout: 0
+  m_TargetCamera: {fileID: 0}
+  m_TargetTexture: {fileID: 8400000, guid: 5775671cb909479408a90705eae2da07, type: 2}
+  m_TimeReference: 0
+  m_TargetMaterialRenderer: {fileID: 0}
+  m_TargetMaterialProperty: _MainTex
+  m_RenderMode: 2
+  m_AspectRatio: 2
+  m_DataSource: 0
+  m_PlaybackSpeed: 1
+  m_AudioOutputMode: 2
+  m_TargetAudioSources:
+  - {fileID: 0}
+  m_DirectAudioVolumes:
+  - 1
+  m_Url: 
+  m_EnabledAudioTracks: 01
+  m_DirectAudioMutes: 00
+  m_ControlledAudioTrackCount: 1
+  m_PlayOnAwake: 1
+  m_SkipOnDrop: 1
+  m_Looping: 0
+  m_WaitForFirstFrame: 1
+  m_FrameReadyEventEnabled: 0
+--- !u!114 &5933227791467375853
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3124489699352782271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d51f3a7c41ab0346b49ae50d456bece, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MarkType: 0
+  CustomComponentName: WholeImage
+  ComponentGeneratePath: 
+  CustomComment: 
+  mComponentName: FourSeasons.WholeVideo
+--- !u!114 &1318029483061696275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3124489699352782271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa368d2ae4adb2e44bea5ffc6a4d592d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptName: WholeVideo
+  ScriptsFolder: Assets/Scripts/Game
+  GeneratePrefab: 0
+  PrefabFolder: Assets/Art/Prefab
 --- !u!1 &6710778109059404731
 GameObject:
   m_ObjectHideFlags: 0
@@ -13,8 +155,9 @@ GameObject:
   - component: {fileID: 3428589652688475158}
   - component: {fileID: 947903051735732663}
   - component: {fileID: 2398805180092831617}
+  - component: {fileID: 7487506515330617145}
   m_Layer: 9
-  m_Name: RightImage
+  m_Name: RightVideo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -103,9 +246,9 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
 --- !u!114 &2398805180092831617
@@ -124,7 +267,23 @@ MonoBehaviour:
   CustomComponentName: RightImage
   ComponentGeneratePath: 
   CustomComment: 
-  mComponentName: UnityEngine.UI.RawImage
+  mComponentName: FourSeasons.RightVideo
+--- !u!114 &7487506515330617145
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6710778109059404731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 54e3b64c270dc9946b86b54fd26564a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptName: RightVideo
+  ScriptsFolder: Assets/Scripts/Game
+  GeneratePrefab: 0
+  PrefabFolder: Assets/Art/Prefab
 --- !u!1 &7047146198438068688
 GameObject:
   m_ObjectHideFlags: 0
@@ -138,8 +297,9 @@ GameObject:
   - component: {fileID: 1016950547357684296}
   - component: {fileID: 8559249892238418741}
   - component: {fileID: 8333746996879167507}
+  - component: {fileID: 9219549272570860697}
   m_Layer: 9
-  m_Name: LeftImage
+  m_Name: LeftVideo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -228,9 +388,9 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
 --- !u!114 &8333746996879167507
@@ -249,7 +409,23 @@ MonoBehaviour:
   CustomComponentName: LeftImage
   ComponentGeneratePath: 
   CustomComment: 
-  mComponentName: UnityEngine.UI.RawImage
+  mComponentName: FourSeasons.LeftVideo
+--- !u!114 &9219549272570860697
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7047146198438068688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c14d908407b0ffb4dae5e36b2944daca, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptName: LeftVideo
+  ScriptsFolder: Assets/Scripts/Game
+  GeneratePrefab: 0
+  PrefabFolder: Assets/Art/Prefab
 --- !u!1 &7354282637658705063
 GameObject:
   m_ObjectHideFlags: 0
@@ -263,8 +439,9 @@ GameObject:
   - component: {fileID: 1121260053774362138}
   - component: {fileID: 8454737371008251336}
   - component: {fileID: 8608136446542194751}
+  - component: {fileID: 2525470959560789504}
   m_Layer: 9
-  m_Name: MidImage
+  m_Name: MidVideo
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -353,9 +530,9 @@ VideoPlayer:
   m_EnabledAudioTracks: 01
   m_DirectAudioMutes: 00
   m_ControlledAudioTrackCount: 1
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_SkipOnDrop: 1
-  m_Looping: 0
+  m_Looping: 1
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
 --- !u!114 &8608136446542194751
@@ -374,7 +551,23 @@ MonoBehaviour:
   CustomComponentName: MidImage
   ComponentGeneratePath: 
   CustomComment: 
-  mComponentName: UnityEngine.UI.RawImage
+  mComponentName: FourSeasons.MidVideo
+--- !u!114 &2525470959560789504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7354282637658705063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a17f81e4a7fcfc040abc28124151266b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ScriptName: MidVideo
+  ScriptsFolder: Assets/Scripts/Game
+  GeneratePrefab: 0
+  PrefabFolder: Assets/Art/Prefab
 --- !u!1 &8460048993588515321
 GameObject:
   m_ObjectHideFlags: 0
@@ -410,6 +603,7 @@ RectTransform:
   - {fileID: 6705751402752822258}
   - {fileID: 7728802544294615812}
   - {fileID: 5347832755623584935}
+  - {fileID: 4734702845068839516}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -495,9 +689,10 @@ MonoBehaviour:
   GeneratePrefab: 1
   PrefabFolder: Assets/Art/Prefab
   Camera: {fileID: 1036279390753647228}
-  LeftImage: {fileID: 1016950547357684296}
-  MidImage: {fileID: 1121260053774362138}
-  RightImage: {fileID: 3428589652688475158}
+  LeftVideo: {fileID: 9219549272570860697}
+  MidVideo: {fileID: 2525470959560789504}
+  RightVideo: {fileID: 7487506515330617145}
+  WholeVideo: {fileID: 1318029483061696275}
 --- !u!1 &8512737190940108371
 GameObject:
   m_ObjectHideFlags: 0
