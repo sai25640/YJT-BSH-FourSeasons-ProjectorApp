@@ -3,7 +3,8 @@ namespace Common
 {
     public enum EventType
     {
-        GameEvent,
+        TableVideoEnd,
+        WholeVideoEnd,
     }
 }
 

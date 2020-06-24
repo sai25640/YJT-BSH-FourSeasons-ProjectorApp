@@ -3,16 +3,14 @@ using QFramework;
 using UnityEngine.Experimental.Video;
 using UnityEngine.Video;
 using System;
+using Common;
+using EventType = Common.EventType;
 
 namespace FourSeasons
 {
 	public partial class WholeVideo : ViewController
 	{
 	    private VideoPlayer mVideoPlayer;
-        public VideoPlayer VideoPlayer
-        {
-            get => mVideoPlayer;
-        }
 
         void Awake()
 	    {
@@ -23,19 +21,25 @@ namespace FourSeasons
 		{
             // Code Here		   
 		    //Debug.Log("frameCount:"+mVideoPlayer.frameCount);
-		    mVideoPlayer.frameReady += OnFrameReady;
 		    mVideoPlayer.loopPointReached += OnLoopPointReached;
+            EventCenter.AddListener(EventType.TableVideoEnd,OnTableVideoEnd);
 		}
 
-        private void OnFrameReady(VideoPlayer source, long frameIdx)
+	    void OnDestroy()
+	    {
+	        EventCenter.RemoveListener(EventType.TableVideoEnd, OnTableVideoEnd);
+        }
+
+        private void OnTableVideoEnd()
         {
-            Debug.Log(string.Format("Video:{0} OnFrameReady ByFrameIdx:{1}", source.name,frameIdx));
+            mVideoPlayer.Play();
         }
 
         private void OnLoopPointReached(VideoPlayer source)
         {
             Debug.Log(string.Format("Video:{0} PlayEnd", source.name));
             this.Delay(1f, ()=>this.Hide());
+            EventCenter.Broadcast(EventType.WholeVideoEnd);
         }
      
     }

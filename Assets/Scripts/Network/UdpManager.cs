@@ -5,8 +5,10 @@ using System.Net;
 using System.Net.Sockets;
 using System.Text;
 using System.Threading;
+using Common;
 using QFramework;
 using UnityEngine;
+using EventType = Common.EventType;
 
 public class UdpManager : MonoSingleton<UdpManager>, ISocket
 {
@@ -141,6 +143,12 @@ public class UdpManager : MonoSingleton<UdpManager>, ISocket
             Debug.Log("ReceiveMsg:" + msg);
             var udp = msg.FromJson<UdpMessage>();
             //具体的消息处理
+            switch (udp.Msg)
+            {
+                case MessageDefine.TableVideoEnd:
+                    EventCenter.Broadcast(EventType.TableVideoEnd);
+                    break;
+            }
         }
     }
 

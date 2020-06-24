@@ -1,28 +1,31 @@
 using UnityEngine;
 using QFramework;
 using UnityEngine.Video;
+using Common;
+using EventType = Common.EventType;
 
 namespace FourSeasons
 {
 	public partial class LeftVideo : ViewController
 	{
         private VideoPlayer mVideoPlayer;
-        private VideoCanvas mVideoCanvas;
-        private WholeVideo mWholeVideo;
         void Awake()
         {
             mVideoPlayer = GetComponent<VideoPlayer>();
-            mVideoCanvas = transform.parent.GetComponent<VideoCanvas>();
-            mWholeVideo = mVideoCanvas.WholeVideo;
         }
 
         void Start()
         {
             // Code Here
-            mWholeVideo.VideoPlayer.loopPointReached += OnLoopPointReached;
+            EventCenter.AddListener(EventType.WholeVideoEnd, OnWholeVideoEnd);
         }
 
-        private void OnLoopPointReached(VideoPlayer source)
+        void OnDestroy()
+        {
+            EventCenter.RemoveListener(EventType.WholeVideoEnd, OnWholeVideoEnd);
+        }
+
+        private void OnWholeVideoEnd()
         {
             mVideoPlayer.Play();
         }

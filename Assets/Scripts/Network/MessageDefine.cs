@@ -3,10 +3,18 @@
 using System;
 using UnityEngine;
 
+#region UdpMessage
+
 public class UdpMessage
 {
     public string Msg;
     public string Data;
+
+    public UdpMessage(string msg)
+    {
+        Msg = msg;
+        Data = string.Empty;
+    }
 
     public UdpMessage(string msg, string data)
     {
@@ -27,3 +35,14 @@ public static class UdpMessageExtension
         return JsonUtility.FromJson<UdpMessage>(json);
     }
 }
+
+
+#endregion
+
+#region MessageDefine
+public static class MessageDefine
+{
+    public const string TableVideoEnd = "TableVideoEnd";
+}
+#endregion
+

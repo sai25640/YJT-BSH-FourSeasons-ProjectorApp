@@ -7,11 +7,8 @@ namespace FourSeasons
 	{
 		void Start()
 		{
-		    Observable.EveryUpdate().Subscribe(_ =>
-		    {
-                //WholeVideo.frameCount
-		    }).AddTo(this);
-		}
+		    // Code Here
+        }
 
-	}
+    }
 }
