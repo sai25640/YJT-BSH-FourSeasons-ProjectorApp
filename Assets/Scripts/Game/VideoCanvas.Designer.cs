@@ -1,4 +1,4 @@
-// Generate Id:e3efbfc5-d50e-4cc0-931f-4d234279c86f
+// Generate Id:b56a9ced-99cc-4863-b781-22934d2c786b
 using UnityEngine;
 
 namespace FourSeasons
@@ -6,9 +6,10 @@ namespace FourSeasons
 	public partial class VideoCanvas
 	{
 		public UnityEngine.Camera Camera;
-		public FourSeasons.LeftVideo LeftVideo;
-		public FourSeasons.MidVideo MidVideo;
-		public FourSeasons.RightVideo RightVideo;
+		public FourSeasons.FourSeasonVideo FourSeasonVideo;
+		public UnityEngine.Video.VideoPlayer LeftVideo;
+		public UnityEngine.Video.VideoPlayer MidVideo;
+		public UnityEngine.Video.VideoPlayer RightVideo;
 		public FourSeasons.WholeVideo WholeVideo;
 
 	}

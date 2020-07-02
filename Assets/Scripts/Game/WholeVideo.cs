@@ -38,11 +38,16 @@ namespace FourSeasons
         private void OnLoopPointReached(VideoPlayer source)
         {
             Debug.Log(string.Format("Video:{0} PlayEnd", source.name));
-            this.Delay(1f, ()=>this.Hide());
-            EventCenter.Broadcast(EventType.WholeVideoEnd);
-            //通知交互端开始倒计时
-            var msg = new UdpMessage(MessageDefine.WholeVideoEnd);
-            UdpManager.Instance.SendMessage(msg.ToJson());
+            this.Delay(1f, ()=>
+            {
+                this.Hide();
+
+                //通知交互端开始倒计时
+                var msg = new UdpMessage(MessageDefine.WholeVideoEnd);
+                UdpManager.Instance.SendMessage(msg.ToJson());
+            });
+
+            EventCenter.Broadcast(EventType.WholeVideoEnd);       
         }
 
 	    public void Stop()

@@ -23,9 +23,7 @@ namespace FourSeasons
         private void StopAllVideoPlay()
         {
             WholeVideo.Stop();
-            LeftVideo.Stop();
-            MidVideo.Stop();
-            RightVideo.Stop();
+            FourSeasonVideo.Stop();
             WholeVideo.Show();
         }
 

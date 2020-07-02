@@ -1,19 +1,12 @@
-using Common;
 using UnityEngine;
 using QFramework;
-using UnityEngine.Video;
+using Common;
 using EventType = Common.EventType;
 
 namespace FourSeasons
 {
-	public partial class RightVideo : ViewController
+	public partial class FourSeasonVideo : ViewController
 	{
-        private VideoPlayer mVideoPlayer;
-        void Awake()
-        {
-            mVideoPlayer = GetComponent<VideoPlayer>();
-        }
-
         void Start()
         {
             // Code Here
@@ -27,12 +20,17 @@ namespace FourSeasons
 
         private void OnWholeVideoEnd()
         {
-            mVideoPlayer.Play();
+            //Debug.Log("FourSeasons Play");
+            LeftVideo.Play();
+            MidVideo.Play();
+            RightVideo.Play();
         }
 
         public void Stop()
         {
-            mVideoPlayer.Stop();
+            LeftVideo.Stop();
+            MidVideo.Stop();
+            RightVideo.Stop();
         }
     }
 }
