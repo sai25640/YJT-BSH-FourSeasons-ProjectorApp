@@ -1,13 +1,14 @@
-// Generate Id:0dfa19ba-d892-4823-a201-5fac3627f947
+// Generate Id:fe62517e-95cc-4cea-bfb4-ad4df54380e5
 using UnityEngine;
 
 namespace FourSeasons
 {
 	public partial class FourSeasonVideo
 	{
-		public UnityEngine.Video.VideoPlayer LeftVideo;
-		public UnityEngine.Video.VideoPlayer MidVideo;
-		public UnityEngine.Video.VideoPlayer RightVideo;
+		public FourSeasons.LeftVideo LeftVideo;
+		public FourSeasons.MidVideo MidVideo;
+		public FourSeasons.RightVideo RightVideo;
+		public UnityEngine.UI.Image MaskImage;
 
 	}
 }

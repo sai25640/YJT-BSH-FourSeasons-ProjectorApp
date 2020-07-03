@@ -13,18 +13,27 @@ namespace FourSeasons
 		{
 		    // Code Here
             EventCenter.AddListener(EventType.StopPlayProjectVideo,StopAllVideoPlay);
-        }
+		    EventCenter.AddListener(EventType.TableVideoEnd, OnTableVideoEnd);
+
+		    StopAllVideoPlay();
+		}
 
         void OnDestroy()
 	    {
 	        EventCenter.RemoveListener(EventType.StopPlayProjectVideo, StopAllVideoPlay);
+	        EventCenter.RemoveListener(EventType.TableVideoEnd, OnTableVideoEnd);
         }
 
         private void StopAllVideoPlay()
         {
-            WholeVideo.Stop();
+            //WholeVideo.Stop();
             FourSeasonVideo.Stop();
-            WholeVideo.Show();
+            MaskImage.Show();
+        }
+
+        private void OnTableVideoEnd()
+        {
+            FourSeasonVideo.PrepareDragon();
         }
 
     }

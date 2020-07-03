@@ -112,12 +112,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!328 &706386617 stripped
-VideoPlayer:
-  m_CorrespondingSourceObject: {fileID: 8559249892238418741, guid: eb5749cc02d70314094a6e7210a596eb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1273875444}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &824556363
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,12 +168,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eeb8f168f80741d183dc3691f851000, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!328 &1163110825 stripped
-VideoPlayer:
-  m_CorrespondingSourceObject: {fileID: 947903051735732663, guid: eb5749cc02d70314094a6e7210a596eb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1273875444}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1273875444
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -297,42 +285,5 @@ PrefabInstance:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6061972822255878784, guid: eb5749cc02d70314094a6e7210a596eb,
-        type: 3}
-      propertyPath: m_Name
-      value: FourSeasonVideo
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 4441619485132195715, guid: eb5749cc02d70314094a6e7210a596eb, type: 3}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb5749cc02d70314094a6e7210a596eb, type: 3}
---- !u!328 &1584295816 stripped
-VideoPlayer:
-  m_CorrespondingSourceObject: {fileID: 8454737371008251336, guid: eb5749cc02d70314094a6e7210a596eb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1273875444}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &6061972822255878784 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6061972822255878784, guid: eb5749cc02d70314094a6e7210a596eb,
-    type: 3}
-  m_PrefabInstance: {fileID: 1273875444}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &6061972822255878785
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6061972822255878784}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acdccafa7b78ab84ead9ab797d45c450, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ScriptName: FourSeasonVideo
-  ScriptsFolder: Assets/Scripts/Game
-  GeneratePrefab: 0
-  PrefabFolder: Assets/Art/Prefab
-  LeftVideo: {fileID: 706386617}
-  MidVideo: {fileID: 1584295816}
-  RightVideo: {fileID: 1163110825}

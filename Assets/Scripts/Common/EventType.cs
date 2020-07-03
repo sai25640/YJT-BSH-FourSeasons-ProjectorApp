@@ -6,6 +6,7 @@ namespace Common
         TableVideoEnd,
         WholeVideoEnd,
         StopPlayProjectVideo,
+        VideoPrepareCompleted,
     }
 }
 
