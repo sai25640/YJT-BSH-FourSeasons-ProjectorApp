@@ -22,7 +22,6 @@ namespace FourSeasons
 
 	    public void PrepareDragon()
 	    {
-	        this.Delay(1f, () => MaskImage.Hide());
             LeftVideo.gameObject.SetActive(true);
             MidVideo.gameObject.SetActive(true);
             RightVideo.gameObject.SetActive(true);
@@ -49,6 +48,7 @@ namespace FourSeasons
             //等左中右视频都准备完毕以后，统一开始播放
             if (mPrepareCount>=3)
             {
+                MaskImage.Hide();
                 LeftVideo.Play();
                 MidVideo.Play();
                 RightVideo.Play();

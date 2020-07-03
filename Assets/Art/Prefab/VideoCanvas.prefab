@@ -719,6 +719,7 @@ MonoBehaviour:
   MidVideo: {fileID: 1414595231068041190}
   RightVideo: {fileID: 4174960895946174899}
   MaskImage: {fileID: 740373413492510893}
+  DragonVideo: {fileID: 0}
 --- !u!1 &8512737190940108371
 GameObject:
   m_ObjectHideFlags: 0

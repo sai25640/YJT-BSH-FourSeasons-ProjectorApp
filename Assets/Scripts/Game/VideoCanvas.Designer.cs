@@ -1,4 +1,4 @@
-// Generate Id:5d052a42-1bd5-4dda-ae9e-c2cb029f9b7e
+// Generate Id:32852d5f-4501-4d87-8d33-2c94721f76a5
 using UnityEngine;
 
 namespace FourSeasons
@@ -11,6 +11,7 @@ namespace FourSeasons
 		public FourSeasons.MidVideo MidVideo;
 		public FourSeasons.RightVideo RightVideo;
 		public UnityEngine.UI.Image MaskImage;
+
 
 	}
 }

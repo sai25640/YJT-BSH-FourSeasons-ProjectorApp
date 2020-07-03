@@ -1,6 +1,7 @@
 using Common;
 using UnityEngine;
 using QFramework;
+using UnityEngine.UI;
 using UnityEngine.Video;
 using EventType = Common.EventType;
 
@@ -9,11 +10,12 @@ namespace FourSeasons
 	public partial class LeftVideo : ViewController
 	{
 	    private VideoPlayer mVideoPlayer;
-
+	    private RawImage mRawImage;
 	    void Awake()
 	    {
 	        mVideoPlayer = GetComponent<VideoPlayer>();
-        }
+	        mRawImage = GetComponent<RawImage>();
+	    }
 
         void Start()
 		{
@@ -43,8 +45,10 @@ namespace FourSeasons
 	        string url = Application.streamingAssetsPath + "/Video/ËÄ¼¾-×ó.mp4";
             //Debug.Log(url);
             mVideoPlayer.url = url;
-	        mVideoPlayer.isLooping = true;
-	        mVideoPlayer.Prepare();
+	        mVideoPlayer.isLooping = false;
+            mVideoPlayer.targetTexture = new RenderTexture(1866, 800, 99);
+            mRawImage.texture = mVideoPlayer.targetTexture;
+            mVideoPlayer.Prepare();
         }
 
 	    public void PrepareDragon()
@@ -53,6 +57,8 @@ namespace FourSeasons
             //Debug.Log(url);
             mVideoPlayer.url = url;
             mVideoPlayer.isLooping = false;
+            mVideoPlayer.targetTexture = new RenderTexture(1866,800,99);
+	        mRawImage.texture = mVideoPlayer.targetTexture;
             mVideoPlayer.Prepare();
         }
 

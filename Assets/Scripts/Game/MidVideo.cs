@@ -4,15 +4,18 @@ using Common;
 using EventType = Common.EventType;
 using UnityEngine.Video;
 using System;
+using UnityEngine.UI;
 
 namespace FourSeasons
 {
 	public partial class MidVideo : ViewController
 	{
         private VideoPlayer mVideoPlayer;
+	    private RawImage mRawImage;
         void Awake()
         {
             mVideoPlayer = GetComponent<VideoPlayer>();
+            mRawImage = GetComponent<RawImage>();
 
         }
         void Start()
@@ -43,7 +46,9 @@ namespace FourSeasons
             string url = Application.streamingAssetsPath + "/Video/ËÄ¼¾-ÖÐ.mp4";
             //Debug.Log(url);
             mVideoPlayer.url = url;
-            mVideoPlayer.isLooping = true;
+            mVideoPlayer.isLooping = false;
+            mVideoPlayer.targetTexture = new RenderTexture(3200, 800, 99);
+            mRawImage.texture = mVideoPlayer.targetTexture;
             mVideoPlayer.Prepare();
         }
 
@@ -53,6 +58,8 @@ namespace FourSeasons
             //Debug.Log(url);
             mVideoPlayer.url = url;
             mVideoPlayer.isLooping = false;
+            mVideoPlayer.targetTexture = new RenderTexture(3200, 800, 99);
+            mRawImage.texture = mVideoPlayer.targetTexture;
             mVideoPlayer.Prepare();
         }
 
