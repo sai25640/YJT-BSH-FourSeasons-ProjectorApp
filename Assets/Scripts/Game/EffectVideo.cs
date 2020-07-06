@@ -24,6 +24,12 @@ namespace FourSeasons
                     .GetComponent<Effect>()
                     .ApplySelfTo(e => e.Init(transform));
             }
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                ResLoader.Allocate().LoadSync<GameObject>("FullEffect").Instantiate()
+                    .GetComponent<Effect>()
+                    .ApplySelfTo(e => e.Init(transform));
+            }
         }
 	}
 }
