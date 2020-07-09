@@ -151,6 +151,18 @@ public class UdpManager : MonoSingleton<UdpManager>, ISocket
                 case MessageDefine.StopPlayProjectVideo:
                     EventCenter.Broadcast(EventType.StopPlayProjectVideo);
                     break;
+                case MessageDefine.PlaySpringEffect:
+                    EventCenter.Broadcast(EventType.PlaySpringEffect,udp.Data);
+                    break;
+                case MessageDefine.PlaySummerEffect:
+                    EventCenter.Broadcast(EventType.PlaySummerEffect,udp.Data);
+                    break;
+                case MessageDefine.PlayFallEffect:
+                    EventCenter.Broadcast(EventType.PlayFallEffect);
+                    break;
+                case MessageDefine.PlayWinterEffect:
+                    EventCenter.Broadcast(EventType.PlayWinterEffect);
+                    break;
             }
         }
     }

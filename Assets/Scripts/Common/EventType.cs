@@ -7,6 +7,10 @@ namespace Common
         WholeVideoEnd,
         StopPlayProjectVideo,
         VideoPrepareCompleted,
+        PlaySpringEffect,
+        PlaySummerEffect,
+        PlayFallEffect,
+        PlayWinterEffect
     }
 }
 

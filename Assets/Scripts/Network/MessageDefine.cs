@@ -45,6 +45,10 @@ public static class MessageDefine
     public const string TableVideoEnd = "TableVideoEnd";
     public const string StopPlayProjectVideo = "StopPlayProjectVideo";
     public const string WholeVideoEnd = "WholeVideoEnd";
+    public const string PlaySpringEffect = "PlaySpringEffect";
+    public const string PlaySummerEffect = "PlaySummerEffect";
+    public const string PlayFallEffect = "PlayFallEffect";
+    public const string PlayWinterEffect = "PlayWinterEffect";
 }
 #endregion
 
