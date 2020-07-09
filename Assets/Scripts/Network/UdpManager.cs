@@ -158,10 +158,10 @@ public class UdpManager : MonoSingleton<UdpManager>, ISocket
                     EventCenter.Broadcast(EventType.PlaySummerEffect,udp.Data);
                     break;
                 case MessageDefine.PlayFallEffect:
-                    EventCenter.Broadcast(EventType.PlayFallEffect);
+                    EventCenter.Broadcast(EventType.PlayFallEffect, udp.Data);
                     break;
                 case MessageDefine.PlayWinterEffect:
-                    EventCenter.Broadcast(EventType.PlayWinterEffect);
+                    EventCenter.Broadcast(EventType.PlayWinterEffect, udp.Data);
                     break;
             }
         }

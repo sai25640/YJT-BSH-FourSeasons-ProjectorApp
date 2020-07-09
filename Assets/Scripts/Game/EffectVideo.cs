@@ -11,18 +11,25 @@ namespace FourSeasons
 		void Start()
 		{
 			// Code Here
-            EventCenter.AddListener<string>(EventType.PlaySpringEffect, PlaySpringEffect);
-		    EventCenter.AddListener<string>(EventType.PlaySummerEffect, PlaySummerEffect);
-		    EventCenter.AddListener(EventType.PlayFallEffect, PlayFallEffect);
-		    EventCenter.AddListener(EventType.PlayWinterEffect, PlayWinterEffect);
+            EventCenter.AddListener<string>(EventType.PlaySpringEffect, PlayEffect);
+		    EventCenter.AddListener<string>(EventType.PlaySummerEffect, PlayEffect);
+		    EventCenter.AddListener<string>(EventType.PlayFallEffect, PlayEffect);
+		    EventCenter.AddListener<string>(EventType.PlayWinterEffect, PlayEffect);
         }
 
 	    void OnDestroy()
 	    {
-            EventCenter.RemoveListener<string>(EventType.PlaySpringEffect, PlaySpringEffect);
-            EventCenter.RemoveListener<string>(EventType.PlaySummerEffect, PlaySummerEffect);
-            EventCenter.RemoveListener(EventType.PlayFallEffect, PlayFallEffect);
-            EventCenter.RemoveListener(EventType.PlayWinterEffect, PlayWinterEffect);
+            EventCenter.RemoveListener<string>(EventType.PlaySpringEffect, PlayEffect);
+            EventCenter.RemoveListener<string>(EventType.PlaySummerEffect, PlayEffect);
+            EventCenter.RemoveListener<string>(EventType.PlayFallEffect, PlayEffect);
+            EventCenter.RemoveListener<string>(EventType.PlayWinterEffect, PlayEffect);
+        }
+
+	    private void PlayEffect(string name)
+	    {
+            ResLoader.Allocate().LoadSync<GameObject>(name).Instantiate()
+                .GetComponent<Effect>()
+                .ApplySelfTo(e => e.Init(transform));
         }
 
         private void PlaySpringEffect(string name)

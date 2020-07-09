@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &2149485789342812215
+--- !u!1 &3021045564854440714
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,25 +8,25 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7169845548140948621}
-  - component: {fileID: 7943037442485923411}
-  - component: {fileID: 2713067287774084164}
-  - component: {fileID: 6863413068137570811}
-  - component: {fileID: 2149485789342812214}
+  - component: {fileID: 6320803766475372464}
+  - component: {fileID: 6486097676359988590}
+  - component: {fileID: 1269638316352726905}
+  - component: {fileID: 7712366888892857030}
+  - component: {fileID: 3021045564854440715}
   m_Layer: 9
-  m_Name: FallEffect 1
+  m_Name: WinterEffect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &7169845548140948621
+--- !u!224 &6320803766475372464
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149485789342812215}
+  m_GameObject: {fileID: 3021045564854440714}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: -1}
@@ -39,27 +39,27 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 1500, y: 1600}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7943037442485923411
+--- !u!222 &6486097676359988590
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149485789342812215}
+  m_GameObject: {fileID: 3021045564854440714}
   m_CullTransparentMesh: 0
---- !u!114 &2713067287774084164
+--- !u!114 &1269638316352726905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149485789342812215}
+  m_GameObject: {fileID: 3021045564854440714}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: -98529514, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: 10fb25f481ee28d47bb244921b19104b, type: 2}
+  m_Material: {fileID: 2100000, guid: 0805f2ab19259884f89fdb3e35a1f71b, type: 2}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -74,15 +74,15 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
---- !u!328 &6863413068137570811
+--- !u!328 &7712366888892857030
 VideoPlayer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149485789342812215}
+  m_GameObject: {fileID: 3021045564854440714}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 9f64a56e8cf1ee6438579a9fe31e7e4a, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 91d8b6f8ffbd5f54393346a2647ee92b, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -108,13 +108,13 @@ VideoPlayer:
   m_Looping: 0
   m_WaitForFirstFrame: 1
   m_FrameReadyEventEnabled: 0
---- !u!114 &2149485789342812214
+--- !u!114 &3021045564854440715
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2149485789342812215}
+  m_GameObject: {fileID: 3021045564854440714}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: faa0403d692abe640b78b5772086043a, type: 3}
