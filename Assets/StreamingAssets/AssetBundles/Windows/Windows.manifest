@@ -1,5 +1,5 @@
 ManifestFileVersion: 0
-CRC: 3779461576
+CRC: 1126746532
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
@@ -16,4 +16,46 @@ AssetBundleManifest:
       Dependencies: {}
     Info_4:
       Name: videocanvas_prefab
+      Dependencies: {}
+    Info_5:
+      Name: springeffect_prefab
+      Dependencies: {}
+    Info_6:
+      Name: summereffect_prefab
+      Dependencies: {}
+    Info_7:
+      Name: falleffect_prefab
+      Dependencies: {}
+    Info_8:
+      Name: springeffect2_prefab
+      Dependencies: {}
+    Info_9:
+      Name: springeffect3_prefab
+      Dependencies: {}
+    Info_10:
+      Name: springeffect4_prefab
+      Dependencies: {}
+    Info_11:
+      Name: summereffect2_prefab
+      Dependencies: {}
+    Info_12:
+      Name: summereffect3_prefab
+      Dependencies: {}
+    Info_13:
+      Name: summereffect4_prefab
+      Dependencies: {}
+    Info_14:
+      Name: falleffect2_prefab
+      Dependencies: {}
+    Info_15:
+      Name: falleffect3_prefab
+      Dependencies: {}
+    Info_16:
+      Name: falleffect4_prefab
+      Dependencies: {}
+    Info_17:
+      Name: wintereffect_prefab
+      Dependencies: {}
+    Info_18:
+      Name: wintereffect2_prefab
       Dependencies: {}
